@@ -1,0 +1,194 @@
+*
+::after
+::before {
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "aeconic";
+  src: url(..\tetris\font\aeconic.woff)format("woff"),url(..\tetris\font\aeconic.woff2)format("woff2");
+  
+}
+  a {
+  color:#8795a8d7;
+  text-decoration: none;
+}
+.container{
+  font-family:"aeconic";
+  color:white;
+  -webkit-text-stroke: 1px #060101;
+  font-size: 30px;
+  width: 120vh;
+  height: 95vh;
+  margin:0 auto;
+  background-image: url("../tetris/img/4be5a116318525-599c589608005.jpg");
+}
+.container__gradient{
+  background-color:rgba(231, 246, 203,0.9) ;
+  height: 95vh;
+}
+.conteiner__section{
+  
+  display:flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  height: 86vh;
+}
+.section__game{
+  background-color: #c1cee0d7;
+  width:50%;
+  border: 8px solid #8795a8d7;
+}
+.section__tools{
+  width:40%;
+  
+}
+.tools__element{
+  background-color: #e3edf6;
+  height: 21vh;
+  border: 8px solid #8795a8d7;
+}
+/* таблица */
+.tools__table{
+  width:100%;
+  margin-top: 34px;
+  border-spacing: 9px;
+}
+
+
+.table__row{
+  font-size: 67px;
+  font-weight: bold;
+  width: 100%;
+  text-align: justify;
+
+}
+.table__row__level-number,
+.table__row__lines-number,
+.table__row__score-number{
+  color:#060101;
+  text-align: end;
+  font-weight: 100;
+}
+
+
+
+.table__row__button{
+  display:flex;
+  color:#73787ed7;
+  list-style-type: square;
+  font-size: 30px;
+  gap: 142px;
+  font-size: 67px;
+  margin: 26px 0px 26px 0px;
+}
+
+
+.tools__element-header{
+  margin :0 auto;
+  font-size: 6em;
+  -webkit-text-stroke: 1px #8795a8d7;
+  
+  
+}
+
+
+
+
+
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
