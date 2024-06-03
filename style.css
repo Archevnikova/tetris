@@ -91,9 +91,22 @@
   
   
 }
+.cube{
+  width:30px;
+  height: 30px;
+  border:2px solid black;
+  display: inline-block;
+}
+.line{
+  height: 34px;
+}
 
-
-
+.empty{
+  width:30px;
+  height: 30px;
+  border:2px solid transparent;
+  display: inline-block;
+}
 
 
 /* :root {
