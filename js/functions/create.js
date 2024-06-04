@@ -5,7 +5,7 @@ export function create(shape){
 
     for (let i = 0 ; i < shape.length; i++){
         const lineElement = document.createElement("div");
-        debugger;
+    
         for (let j = 0 ; j < shape[i].length; j++){
             const cube = document.createElement("span");
             if(shape[i][j]){
