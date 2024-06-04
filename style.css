@@ -18,8 +18,10 @@
   color:white;
   -webkit-text-stroke: 1px #060101;
   font-size: 30px;
-  width: 120vh;
-  height: 95vh;
+  
+  height: 100%;
+  max-width: 1120px;
+  width: 100%;
   margin:0 auto;
   background-image: url("../tetris/img/4be5a116318525-599c589608005.jpg");
 }
@@ -49,17 +51,21 @@
   border: 8px solid #8795a8d7;
 }
 /* таблица */
+
+.container__tools{
+
+}
 .tools__table{
   width:100%;
-  margin-top: 34px;
+  /* margin-top: 34px; */
   border-spacing: 9px;
 }
 
 
 .table__row{
-  font-size: 67px;
+  font-size: 2em;
   font-weight: bold;
-  width: 100%;
+  /* width: 100%; */
   text-align: justify;
 
 }
@@ -77,11 +83,12 @@
   display:flex;
   color:#73787ed7;
   list-style-type: square;
-  font-size: 30px;
-  gap: 142px;
-  font-size: 67px;
+  
+  font-size: 2em; 
   margin: 26px 0px 26px 0px;
+  justify-content: space-between;
 }
+
 
 
 .tools__element-header{
@@ -108,7 +115,91 @@
   display: inline-block;
 }
 
-
+@media screen and (max-width:1134px){
+  .container{
+    width:800px;
+  }
+  .tools__element-header{
+    font-size: 4em;
+   
+  }
+  .table__row,
+  .table__row__button{
+    font-size: 40px;
+  }
+}
+@media screen and (max-width:796px){
+  .container{
+    width:400px;
+    height: 100%;
+  }
+  .conteiner__section{
+    display: block;
+  }
+  .section__game{
+    width: 90%;
+    height: 60%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
+  .section__tools{
+    width: 93%;
+    height: 40%;
+    margin: 0 auto;
+  }
+  .tools__element{
+    height: 13vh;
+    width: 100%;
+  }
+  .container__tools{
+    display: flex;
+  }
+  .table__row{
+    font-size: 30px;
+  }
+  .table__row__button{
+    justify-content: space-around;
+    margin: 14px 0px -17px 0px;
+  }
+  .tools__element-header{
+    font-size: 5em;
+  }
+}
+@media screen and (max-width:410px){
+  .container{
+    width:100%;
+    height: 100%;
+  }
+  .tools__element-header{
+    font-size: 3em;
+    letter-spacing: 9px;
+  }
+  
+}
+@media screen and (max-width:305px){
+  .container{
+    width:200px;
+    max-width: 100%;
+  }
+  .container__tools{
+    display: flex;
+  }
+  .tools__element{
+    width: 93%;
+    height: 8vh;
+  }
+  .table__row{
+    font-size: 20px;
+  }
+  .table__row__button{
+    font-size: 30px;
+    justify-content: space-between;
+  }
+  .tools__element-header{
+    font-size: 2em;
+    letter-spacing: 7px;
+  }
+}
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
