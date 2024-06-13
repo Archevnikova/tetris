@@ -1,0 +1,1 @@
+export const position = {row:9,column:5};

@@ -1,5 +1,6 @@
 import { activeFigure } from "../../main";
-import { position } from "../figures/figures";
+import { position } from "../figures/position";
+
 
 export function drawFigure(){
     let rows = document.querySelectorAll("tr");

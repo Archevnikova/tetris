@@ -5,6 +5,8 @@ import { corner, line, square, t, z } from './js/figures/figures.js';
 
 import { createTable } from './js/functions/create-table.js';
 import { drawFigure } from './js/functions/draw-figure.js';
+import { position } from './js/figures/position.js';
+
 
 
 // document.querySelector('#app').innerHTML = `
@@ -23,6 +25,18 @@ const index = parseInt(Math.random()*5);
 export const activeFigure = shapes[index];  
 createTable();
 drawFigure();
+
+addEventListener("keydown",(event)=>{
+    if(event.code =="ArrowLeft"){
+        position.row--;
+        drawFigure();
+    }else if (event.code =="ArrowRight"){
+        position.row++;
+        drawFigure();
+    }
+
+    
+})
 // create(shapes[index]); 
 // paint();
 

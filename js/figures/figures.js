@@ -1,5 +1,5 @@
  export const area = new Array(42).fill(0).map(()=>new Array(21).fill(0));
- export const position = {row:9,column:1};
+
 
  let square = [
     [{block:"active",
