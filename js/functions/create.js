@@ -2,7 +2,7 @@ export function create(shape){
     const lines  = shape.length;
     const cubesInLine = shape[0].length; 
     const figure = document.querySelector(".figure");
-
+    
     for (let i = 0 ; i < shape.length; i++){
         const lineElement = document.createElement("div");
     

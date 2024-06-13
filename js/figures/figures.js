@@ -1,20 +1,77 @@
+ export const area = new Array(42).fill(0).map(()=>new Array(21).fill(0));
+ export const position = {row:9,column:1};
+
  let square = [
-    [true,true],
-    [true,true]
+    [{block:"active",
+      cube:1,
+    },{block:"active",
+      cube:1,
+    }],
+    [{block:"active",
+      cube:1,
+    },{block:"active",
+      cube:1,
+    }],
+   
+    
 ];
 let line = [
-    [true,true,true,true]
+    [{block:"active",
+      cube:1,
+    },{block:"active",
+      cube:1,
+    },{block:"active",
+      cube:1,
+    },{block:"active",
+      cube:1,
+    }]
 ];
 let corner = [
-    [true,true,true],
-    [true,false,false]
+    [{block:"active",
+      cube:1,
+    },{block:"active",
+      cube:1,
+    },{block:"active",
+      cube:1,
+    }],
+    [{block:"active",
+      cube:1,
+    },{block:"active",
+        cube:0,
+      },{block:"active",
+      cube:0,
+    }]
 ];
 let z = [
-    [false,true,true],
-    [true,true,false]
+    [{block:"active",
+      cube:0,
+    },{block:"active",
+      cube:1,
+    },{block:"active",
+      cube:1,
+    }],
+    [{block:"active",
+      cube:1,
+    },{block:"active",
+      cube:1,
+    },{block:"active",
+      cube:0,
+    }]
 ];
-let t = [
-    [true,true,true],
-    [false,true,false]
+let t = [ 
+    [{block:"active",
+      cube:1,
+    },{block:"active",
+      cube:1,
+    },{block:"active",
+      cube:1,
+    }],
+    [{block:"active",
+      cube:0,
+    },{block:"active",
+      cube:1,
+    },{block:"active",
+      cube:0,
+    }]
 ];
 export {square,line,z,t,corner};

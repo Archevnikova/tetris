@@ -99,20 +99,42 @@
   
 }
 .cube{
-  width:30px;
-  height: 30px;
-  border:2px solid black;
-  display: inline-block;
+  width:15px;
+  height: 15px;
+  /* border:2px solid black; */
+  /* display: inline-block; */
+  background-color: red;
 }
 .line{
   height: 34px;
 }
 
 .empty{
-  width:30px;
-  height: 30px;
-  border:2px solid transparent;
-  display: inline-block;
+  width:15px;
+  height: 15px;
+  /* border:2px solid transparent; */
+  /* display: inline-block; */
+
+}
+.blue{
+  background-color: blue;
+}
+.red{
+  background-color: red;
+}
+.yellow{
+  background-color: yellow;
+}
+.green{
+  background-color: green;
+}
+.orange{
+  background-color: orange;
+}
+td{
+  /* width:15px;
+  height: 15px; */
+  border:1px solid black;
 }
 
 @media screen and (max-width:1134px){
